@@ -4,3 +4,5 @@ export interface URLModel {
     createdAt: Date;
     clicks: number;
 }
+
+export const urlDatabase = new Map<string, URLModel>();

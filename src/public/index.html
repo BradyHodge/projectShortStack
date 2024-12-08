@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Stack URL</title>
+    <link rel="stylesheet" href="/main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+
+        <div class="card">
+            <form id="shortenForm">
+                <div class="form-group">
+                    <label for="originalUrl">Enter URL to Shorten</label>
+                    <input
+                        type="url"
+                        id="originalUrl"
+                        required
+                        placeholder="https://example.com"
+                    >
+                </div>
+                <button type="submit" class="primary-button">
+                    Shorten URL
+                </button>
+            </form>
+        </div>
+
+        <div id="results" class="card hidden">
+            <h2>Your Shortened URL</h2>
+            <div class="form-group">
+                <label>Short URL</label>
+                <div class="url-group">
+                    <input
+                        type="text"
+                        id="shortUrl"
+                        readonly
+                        class="url-input"
+                    >
+                    <button
+                        onclick="copyToClipboard()"
+                        class="copy-button"
+                    >
+                        Copy
+                    </button>
+                </div>
+            </div>
+            <div id="statsSection" class="hidden">
+                <h3>Statistics</h3>
+                <div class="stats-grid">
+                    <div>
+                        <label>Total Clicks</label>
+                        <div id="clickCount" class="stat-value"></div>
+                    </div>
+                    <div>
+                        <label>Created At</label>
+                        <div id="createdAt" class="stat-value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manage-trusted">
+            <button onclick="openTrustedDomains()" class="manage-trusted-button">
+                Manage My Trusted Domains
+            </button>
+        </div>
+    </div>
+
+    <div id="trusted-domains-modal" class="modal">
+        <div class="modal-content">
+            <div class="card">
+                <h2>Trusted Domains</h2>
+                <div id="trusted-domains-list" class="trusted-domains-list">
+                </div>
+                <button class="primary-button" onclick="closeTrustedDomains()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./manageTrustedDomains.js"></script>
+    <script src="./apiStuff.js"></script>
+</body>
+</html>
