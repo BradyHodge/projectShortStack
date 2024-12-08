@@ -2,9 +2,9 @@
 
 Do you hate typing long URLs? Are you running out of space in your twitter bio? Fear no more!
 
-Project Short Stack is a URL shortening service hosted at [sho.rtstack.cc](https://www.typescripttutorial.net/). You can create a super clean link to (almost) anywhere on the vast internet, for free! You can even set custom "Trusted Domains" to get rid of those pesky warring messages while redirecting.
+Project Short Stack is a URL shortening service hosted at [sho.rtstack.cc](https://sho.rtstack.cc/). You can create a super clean link to (almost) anywhere on the vast internet, for free! You can even set custom "Trusted Domains" to get rid of those pesky warring messages while redirecting.
 
-[Software Demo Video](null)
+[Software Demo Video](https://youtu.be/YwlJydSOMV8)
 
 # Development Environment
 
@@ -13,7 +13,7 @@ This project is written in Typescript and uses Node.js as the engine. REST route
 # Useful Websites
 
 - [Typescript Tutorial](https://www.typescripttutorial.net/)
-- [Express JS](https://expressjs.com/en/guide/routing.html)
+- [Express JS](https://expressjs.com/en/guide/routing.html/)
 
 # Future Work
 
