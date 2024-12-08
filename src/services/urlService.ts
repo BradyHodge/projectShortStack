@@ -4,7 +4,6 @@ import { DEFAULT_WHITELIST_DOMAINS } from '../config/constants';
 import { urlDatabase } from '../models/url';
 import { generateShortCode } from '../utils/shortCode';
 import { URLModel } from '../models/url';
-import { PORT } from '../config/constants';
 
 let WHITELIST_DOMAINS: string[] = [];
 
