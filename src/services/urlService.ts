@@ -59,7 +59,7 @@ export function createShortUrl(originalUrl: string): URLModel {
 }
 
 export function getShortUrl(shortCode: string): string {
-    return `http://localhost:${PORT}/${shortCode}`;
+    return `https://sho.rtstack.cc/${shortCode}`;
 }
 
 export function incrementClicks(urlData: URLModel): void {

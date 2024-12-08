@@ -9,7 +9,6 @@ import {
 
 const router = Router();
 
-// Static routes
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
@@ -18,7 +17,6 @@ router.get('/confirm', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/confirm.html'));
 });
 
-// API routes
 router.post('/api/shorten', shortenUrl);
 router.get('/r/:shortCode', redirectToUrl);
 router.get('/:shortCode', handleShortCode);
