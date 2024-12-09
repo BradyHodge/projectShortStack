@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirm Redirect</title>
     <link rel="stylesheet" href="./main.css">
+    <script defer src="./manageTrustedLocal.js"></script>
     <script defer src="./loadTrustedLocal.js"></script>
     <script defer src="./trustedDomainsService.js"></script>
     <!-- <script defer src="tldRedirect.js"></script> -->
-    
+   
 </head>
 <body>
     <div class="container">
@@ -34,7 +35,22 @@
                 </div>
             </div>
         </div>
+        <div class="manage-trusted">
+            <button onclick="openTrustedDomains()" class="manage-trusted-button">
+                Manage My Trusted Domains
+            </button>
+        </div>
     </div>
 
+    <div id="trusted-domains-modal" class="modal">
+        <div class="modal-content">
+            <div class="card">
+                <h2>Trusted Domains</h2>
+                <div id="trusted-domains-list" class="trusted-domains-list">
+                </div>
+                <button class="primary-button" onclick="closeTrustedDomains()">Close</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
