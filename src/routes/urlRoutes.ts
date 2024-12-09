@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import path from 'path';
-import { 
-    shortenUrl, 
-    redirectToUrl, 
-    handleShortCode, 
-    getUrlStats 
+import {
+    shortenUrl,
+    redirectToUrl,
+    handleShortCode,
+    getUrlStats
 } from '../controllers/urlController';
 
 const router = Router();

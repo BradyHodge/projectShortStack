@@ -1,5 +1,6 @@
+import { CODE_LENGTH } from '../config/constants';
 const CHARACTERS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const CODE_LENGTH = 6;
+
 
 export function generateShortCode(): string {
     let shortCode = '';
