@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Trusted Domains - SOTK</title>
+    <link rel="stylesheet" href="/main.css">
+    <script defer src="./trustedDomainsService.js"></script>
+    <script defer src="./manageTrustedLocal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Trusted Domains</h1>
+        
+        <div class="card">
+            <h2>Your Trusted Domains</h2>
+            <p class="description">
+                Domains you trust will skip the confirmation page when redirecting from shortened URLs.
+            </p>
+            <div id="trusted-domains-list" class="trusted-domains-list">
+            </div>
+        </div>
+
+        <div class="button-group" style="justify-content: center; margin-top: 2rem;">
+            <a href="https://shortstack.cc" class="primary-button">
+                Back to Short Stack
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Auto-render on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTrustedDomains();
+        });
+    </script>
+</body>
+</html>

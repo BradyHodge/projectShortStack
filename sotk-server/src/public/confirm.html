@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Redirect - SOTK</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./trustedDomainsService.js"></script>
+    <script defer src="./loadTrustedLocal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Redirect</h1>
+        <div class="card">
+            <div class="confirm-content">
+                <div class="warning-badge">
+                    ⚠️ External Domain Warning
+                </div>
+                <h2>You're leaving trusted domains</h2>
+                <p class="description">You are about to be redirected to:</p>
+                <div class="destination-url">
+                    <span id="destination-url"></span>
+                </div>
+                <p class="description">Are you sure you want to proceed?</p>
+                <div class="trust-checkbox-container">
+                    <input type="checkbox" id="trust-domain" class="trust-checkbox">
+                    <label for="trust-domain" class="trust-label">Trust this domain for future redirects</label>
+                </div>
+                <div class="button-group">
+                    <a id="proceed-button" href="#" class="primary-button">Proceed to Site</a>
+                    <a href="https://shortstack.cc" class="danger-button">Go to Short Stack</a>
+                </div>
+            </div>
+        </div>
+        <div class="manage-trusted">
+            <a href="/manage-trusted" class="manage-trusted-button">
+                Manage My Trusted Domains
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  shortstack:
+    build:
+      context: ./shortstack-server
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - shared-data:/data
+    environment:
+      - DB_PATH=/data
+      - PORT=3000
+    networks:
+      - urlshortener
+
+  sotk:
+    build:
+      context: ./sotk-server
+      dockerfile: dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - shared-data:/data
+    environment:
+      - DB_PATH=/data
+      - PORT=3001
+    networks:
+      - urlshortener
+
+volumes:
+  shared-data:
+
+networks:
+  urlshortener:
