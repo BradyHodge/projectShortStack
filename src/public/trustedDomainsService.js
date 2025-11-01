@@ -1,4 +1,4 @@
-const TRUSTED_DOMAINS_KEY = 'trusted-domains';
+let TRUSTED_DOMAINS_KEY = 'trusted-domains';
 
 window.trustedDomainsService = {
     getTrustedDomains() {
